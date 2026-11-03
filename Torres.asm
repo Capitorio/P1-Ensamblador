@@ -14,7 +14,7 @@ torre3: .word 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 .text
  
 #Iniciar N discos (esta parte es modificable)
-addi s0,zero,3 #modificar inmediato para numero de discos (no mayor a 15)
+addi s0,zero,15 #modificar inmediato para numero de discos (no mayor a 15)
 
 lui s1,%hi(torre1) #Reservamos para torre 1
 addi s1,s1,%lo(torre1)
