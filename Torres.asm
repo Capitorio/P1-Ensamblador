@@ -47,10 +47,10 @@ jal ra, chamoy #chamoy sera el nombre de la ejecucion de los movimientos
 addi a7,zero,10 #servicio 10 de ecall = terminar programa
 ecall
 
-#--------------------------------------------------------------------
+
 # chamoy(N, origen, auxiliar, destino)
 # a0 = N, a1 = origen, a2 = auxiliar, a3 = destino
-#--------------------------------------------------------------------
+
 chamoy:
 addi sp,sp,-20 #barrer los 20 bytes que vamos a almacenar
 
@@ -97,11 +97,11 @@ lw ra,0(sp) #recuperamos la direccion de retorno
 addi sp,sp,20 #liberamos el espacio del stack
 jalr zero,ra,0 #regresamos a quien nos llamo
 
-#--------------------------------------------------------------------
+
 # mover_disco: saca el disco de arriba de la torre a1 y lo pone en la torre a3
 # No modifica los registros a ni s, solo usa temporales
 # PONER EL BREAKPOINT EN EL jalr DE ABAJO: cada vez que se detenga es un movimiento
-#--------------------------------------------------------------------
+
 mover_disco:
 add t0,zero,a1 #t0 recorre la torre origen
 addi t2,a1,60 #t2 = direccion donde acaba la torre (15 espacios * 4 bytes)
