@@ -4,7 +4,7 @@
 #Cambios aplicados(Ponerlo resumido en el commit): se agrego la funcion recursiva chamoy completa
 #                                                  (caso base, dos llamadas recursivas y restauracion
 #                                                  del stack) y la subrutina mover_disco que pasa un
-#                                                  disco de una torre a otra. Se agrego la salida del programa.
+#                                                  disco de una torre a otra. Se agrego la salida del  programa.
 
 .data
 #INICIAMOS TORRES EN MEMORIA(cada una con 15 espacios para 15 discros)
